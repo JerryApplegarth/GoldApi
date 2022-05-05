@@ -2,7 +2,6 @@ package com.applecompose.goldapi.repository
 
 import android.util.Log
 import com.applecompose.goldapi.data.DataOrException
-import com.applecompose.goldapi.model.GoldList
 import com.applecompose.goldapi.model.Rates
 import com.applecompose.goldapi.network.GoldApi
 import javax.inject.Inject
