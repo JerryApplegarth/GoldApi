@@ -1,6 +1,7 @@
 package com.applecompose.goldapi.di
 
 import com.applecompose.goldapi.network.GoldApi
+import com.applecompose.goldapi.repository.GoldRepository
 import com.applecompose.goldapi.utils.Constants
 import dagger.Module
 import dagger.Provides
@@ -13,6 +14,10 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 class AppModule {
+
+	@Provides
+	@Singleton
+	fun providePriceRepository(api: GoldApi) = GoldRepository(api)
 
 	@Singleton
 	@Provides

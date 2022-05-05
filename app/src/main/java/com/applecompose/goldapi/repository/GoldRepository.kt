@@ -7,7 +7,7 @@ import com.applecompose.goldapi.model.Rates
 import com.applecompose.goldapi.network.GoldApi
 import javax.inject.Inject
 
-class QuestionRepository @Inject constructor(
+class GoldRepository @Inject constructor(
 	private val api: GoldApi) {
 	private val dataOrException =
 		DataOrException<Rates,
