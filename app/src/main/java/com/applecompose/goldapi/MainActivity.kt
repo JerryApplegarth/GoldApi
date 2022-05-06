@@ -16,7 +16,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.applecompose.goldapi.model.Rates
 import com.applecompose.goldapi.screens.GoldViewModel
 import com.applecompose.goldapi.ui.theme.GoldApiTheme
 import dagger.hilt.android.AndroidEntryPoint
