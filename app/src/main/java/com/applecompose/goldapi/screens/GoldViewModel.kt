@@ -15,7 +15,7 @@ import javax.inject.Inject
 class GoldViewModel @Inject constructor(
 	private val repository: GoldRepository
 ): ViewModel(){
-	private val data: MutableState<DataOrException<Rates, Boolean, Exception>> =
+	val data: MutableState<DataOrException<Rates, Boolean, Exception>> =
 		mutableStateOf(DataOrException(null, true, Exception("")))
 
 	init {
